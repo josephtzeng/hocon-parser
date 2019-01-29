@@ -21,7 +21,11 @@
     "keywords": [
         "HOCON config parser"
     ],
-    "author": "Joseph Tzeng",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/josephtzeng/hocon-parser.git"
+    },
+    "author": "Joseph Tzeng <joseph@pushcorn.com>",
     "license": "ISC",
     "devDependencies": {
         "debug": "^4.1.1",
@@ -38,5 +42,9 @@
         "testMatch": [
             "**/tests/*/**/*.js"
         ]
-    }
+    },
+    "bugs": {
+      "url": "https://github.com/josephtzeng/hocon-parser/issues"
+    },
+    "homepage": "https://github.com/josephtzeng/hocon-parser"
 }
