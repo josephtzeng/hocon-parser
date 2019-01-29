@@ -19,6 +19,9 @@
         "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html",
         "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
     },
+    "engines": {
+        "node": ">=10.12.0"
+    },
     "keywords": [
         "HOCON config parser"
     ],
