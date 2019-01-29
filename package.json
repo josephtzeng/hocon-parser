@@ -1,10 +1,10 @@
 {
     "dependencies": {
         "commander": "^2.19.0",
-        "got": "^9.5.0"
+        "got": "^9.6.0"
     },
     "name": "@pushcorn/hocon-parser",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A HOCON parser",
     "main": "lib/parser.js",
     "bin": {
@@ -34,15 +34,20 @@
     "devDependencies": {
         "coveralls": "^3.0.2",
         "debug": "^4.1.1",
-        "eslint": "^5.12.0",
-        "jest": "^23.6.0"
+        "eslint": "^5.12.1",
+        "jest": "^24.0.0"
     },
     "jest": {
-        "setupTestFrameworkScriptFile": "./tests/setup.js",
+        "setupFilesAfterEnv": ["./tests/setup.js"],
         "testPathIgnorePatterns": [
             "/node_modules/",
-            "/resources/",
-            "/tests/setup/core/"
+            "<rootDir>/tests/resources/",
+            "<rootDir>/tests/setup/core/"
+        ],
+        "coveragePathIgnorePatterns": [
+            "/node_modules/",
+            "<rootDir>/tests/resources/",
+            "<rootDir>/tests/setup/core/"
         ],
         "testMatch": [
             "**/tests/*/**/*.js"
