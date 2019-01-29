@@ -1,0 +1,17 @@
+{
+  "db": {
+    "localhost": {
+      "password": "secret",
+      "port": 12345,
+      "user": "mysqlUser"
+    },
+    "protocol": "jdbc:mysql://",
+    "test_db": {
+      "name": "somedb",
+      "password": "secret",
+      "server": "localhost",
+      "url": "jdbc:mysql://12345/somedb",
+      "user": "mysqlUser"
+    }
+  }
+}

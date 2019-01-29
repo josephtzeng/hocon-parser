@@ -1,0 +1,6 @@
+{
+    "hocon-parser":
+    {
+        "plugins": ["test-plugin"]
+    }
+}

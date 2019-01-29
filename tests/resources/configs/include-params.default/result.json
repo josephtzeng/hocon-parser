@@ -1,0 +1,7 @@
+{
+    "file": "sample.txt",
+    "hash-1": "620cb5c443e82d51a0fa3aa7acde192a",
+    "hash-2": "620cb5c443e82d51a0fa3aa7acde192a",
+    "hashes-equal": true,
+    "hash-algo": "md5"
+}

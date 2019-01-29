@@ -1,0 +1,4 @@
+{
+    "a": "include from url",
+    "url-content": "letters {\n   include \"letters/a.conf\"\n   include \"letters/b.json\"\n   include strict(\"letters/c\")\n}\n\ninclude \"root/foo.conf\"\n"
+}

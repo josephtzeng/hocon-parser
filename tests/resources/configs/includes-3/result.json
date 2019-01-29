@@ -1,0 +1,220 @@
+{
+    "a": "This is in the included file",
+    "b": "This is in the including file",
+    "bar": "This is in the including file",
+    "equiv01":
+    {
+        "ints" : {
+            "fortyTwo" : 42,
+            "fortyTwoAgain" : 42
+        },
+
+        "floats" : {
+            "fortyTwoPointOne" : 42.1,
+            "fortyTwoPointOneAgain" : 42.1
+        },
+
+        "strings" : {
+            "abcd" : "abcd",
+            "abcdAgain" : "abcd",
+            "a" : "a",
+            "b" : "b",
+            "c" : "c",
+            "d" : "d",
+            "concatenated" : "null bar 42 baz true 3.14 hi"
+        },
+
+        "arrays" : {
+            "empty" : [],
+            "1" : [ 1 ],
+            "12" : [1, 2],
+            "123" : [1, 2, 3],
+            "ofString" : [ "a", "b", "c" ]
+        },
+
+        "booleans" : {
+            "true" : true,
+            "trueAgain" : true,
+            "false" : false,
+            "falseAgain" : false
+        },
+
+        "nulls" : {
+            "null" : null,
+            "nullAgain" : null
+        }
+    },
+
+    "foo": "This is in the included file",
+    "nonexistent": {},
+    "subtree": {},
+    "test01": {
+        "booleans": 42,
+        "ints": 12,
+        "arrays" : {
+            "empty" : [],
+            "firstElementNotASubst" : [
+                "a",
+                "b"
+            ],
+            "ofArray" : [
+                [
+                    "a",
+                    "b",
+                    "c"
+                ],
+                [
+                    "a",
+                    "b",
+                    "c"
+                ],
+                [
+                    "a",
+                    "b",
+                    "c"
+                ]
+            ],
+            "ofBoolean" : [
+                true,
+                false
+            ],
+            "ofDouble" : [
+                3.14,
+                4.14,
+                5.14
+            ],
+            "ofInt" : [
+                1,
+                2,
+                3
+            ],
+            "ofNull" : [
+                null,
+                null,
+                null
+            ],
+            "ofObject" : [
+                {
+                    "fortyTwo" : 42,
+                    "fortyTwoAgain" : 42
+                },
+                42,
+                {
+                    "a" : "a",
+                    "abcd" : "abcd",
+                    "abcdAgain" : "abcd",
+                    "b" : "b",
+                    "c" : "c",
+                    "concatenated" : "null bar 42 baz true 3.14 hi",
+                    "d" : "d",
+                    "double" : "3.14",
+                    "doubleStartingWithDot" : ".33",
+                    "false" : "false",
+                    "no" : "no",
+                    "null" : "null",
+                    "number" : "57",
+                    "true" : "true",
+                    "yes" : "yes"
+                }
+            ],
+            "ofString" : [
+                "a",
+                "b",
+                "c"
+            ]
+        }
+        ,
+        "durations" : {
+            "halfSecond" : "0.5s",
+            "largeNanos" : "4878955355435272204ns",
+            "micros" : "2000 micros",
+            "millis" : "1 milli",
+            "minusLargeNanos" : "-4878955355435272204ns",
+            "plusLargeNanos" : "+4878955355435272204ns",
+            "second" : "1s",
+            "secondAsNumber" : 1000,
+            "secondsList" : [
+                "1s",
+                "2seconds",
+                "3 s",
+                4000
+            ]
+        },
+        "floats" : {
+            "fortyTwoPointOne" : 42.1,
+            "fortyTwoPointOneAgain" : 42.1,
+            "pointThirtyThree" : ".33",
+            "pointThirtyThreeAgain" : ".33"
+        },
+        "ints" : {
+            "fortyTwo" : 42,
+            "fortyTwoAgain" : 42
+        },
+        "memsizes" : {
+            "halfMeg" : "0.5M",
+            "meg" : "1M",
+            "megAsNumber" : 1048576,
+            "megsList" : [
+                "1M",
+                "1024K",
+                1048576
+            ]
+        },
+        "nulls" : {
+            "null" : null,
+            "nullAgain" : null
+        },
+        "periods" : {
+            "day" : "1d",
+            "dayAsNumber" : 2,
+            "month" : "5 mo",
+            "week" : "3 weeks",
+            "year" : "8y"
+        },
+        "strings" : {
+            "a" : "a",
+            "abcd" : "abcd",
+            "abcdAgain" : "abcd",
+            "b" : "b",
+            "c" : "c",
+            "concatenated" : "null bar 42 baz true 3.14 hi",
+            "d" : "d",
+            "double" : "3.14",
+            "doubleStartingWithDot" : ".33",
+            "false" : "false",
+            "no" : "no",
+            "null" : "null",
+            "number" : "57",
+            "true" : "true",
+            "yes" : "yes"
+        }
+    },
+    "test02":
+    {
+        "" : {
+            "" : {
+                "" : 42
+            }
+        },
+        "-" : 261,
+        "103_a" : 103,
+        "42_a" : 42,
+        "42_b" : 42,
+        "57_a" : 57,
+        "57_b" : 57,
+        "a" : {
+            "b" : {
+                "c" : 57
+            }
+        },
+        "a-c" : 259,
+        "a.b.c" : 103,
+        "a_c" : 260
+    }
+    ,
+    "subtree": {
+        "foo": "This is in the included file",
+        "a": "This is in the included file",
+        "b": "This is in the including file"
+   }
+}

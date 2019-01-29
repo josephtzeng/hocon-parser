@@ -1,0 +1,493 @@
+{
+    "arrays" : {
+        "empty" : [],
+        "of-double" : [
+            3.14,
+            4.14,
+            5.14
+        ],
+        "of-long" : {
+            "1" : 32,
+            "2" : 42,
+            "3" : 52
+        },
+        "ofArray" : [
+            [
+                "a",
+                "b",
+                "c"
+            ],
+            [
+                "a",
+                "b",
+                "c"
+            ],
+            [
+                "a",
+                "b",
+                "c"
+            ]
+        ],
+        "ofBoolean" : [
+            true,
+            false
+        ],
+        "ofConfig" : [
+            {
+                "byteObj" : "1",
+                "byteVal" : "1",
+                "doubleObj" : "1.0",
+                "doubleVal" : "1.0",
+                "intObj" : "3",
+                "intVal" : "3",
+                "longObj" : "4",
+                "longVal" : "4",
+                "shortObj" : "2",
+                "shortVal" : "2"
+            },
+            {
+                "falseVal" : false,
+                "falseValAgain" : false,
+                "off" : "off",
+                "on" : "on",
+                "trueVal" : true,
+                "trueValAgain" : true
+            },
+            {
+                "a" : "a",
+                "abcd" : "abcd",
+                "abcd-again" : "abcd",
+                "b" : "b",
+                "c" : "c",
+                "concatenated" : "null bar 42 baz true 3.14 hi",
+                "d" : "d",
+                "double" : "3.14",
+                "false" : "false",
+                "no" : "no",
+                "null" : "null",
+                "number" : "57",
+                "true" : "true",
+                "yes" : "yes"
+            }
+        ],
+        "ofConfigObject" : [
+            {
+                "byteObj" : "1",
+                "byteVal" : "1",
+                "doubleObj" : "1.0",
+                "doubleVal" : "1.0",
+                "intObj" : "3",
+                "intVal" : "3",
+                "longObj" : "4",
+                "longVal" : "4",
+                "shortObj" : "2",
+                "shortVal" : "2"
+            },
+            {
+                "falseVal" : false,
+                "falseValAgain" : false,
+                "off" : "off",
+                "on" : "on",
+                "trueVal" : true,
+                "trueValAgain" : true
+            },
+            {
+                "a" : "a",
+                "abcd" : "abcd",
+                "abcd-again" : "abcd",
+                "b" : "b",
+                "c" : "c",
+                "concatenated" : "null bar 42 baz true 3.14 hi",
+                "d" : "d",
+                "double" : "3.14",
+                "false" : "false",
+                "no" : "no",
+                "null" : "null",
+                "number" : "57",
+                "true" : "true",
+                "yes" : "yes"
+            }
+        ],
+        "ofConfigValue" : [
+            1,
+            2,
+            "a"
+        ],
+        "ofDuration" : [
+            1,
+            "2h",
+            "3 days"
+        ],
+        "ofInt" : [
+            1,
+            2,
+            3
+        ],
+        "ofMemorySize" : [
+            1024,
+            "1M",
+            "1G"
+        ],
+        "ofNull" : [
+            null,
+            null,
+            null
+        ],
+        "ofObject" : [
+            {
+                "byteObj" : "1",
+                "byteVal" : "1",
+                "doubleObj" : "1.0",
+                "doubleVal" : "1.0",
+                "intObj" : "3",
+                "intVal" : "3",
+                "longObj" : "4",
+                "longVal" : "4",
+                "shortObj" : "2",
+                "shortVal" : "2"
+            },
+            {
+                "falseVal" : false,
+                "falseValAgain" : false,
+                "off" : "off",
+                "on" : "on",
+                "trueVal" : true,
+                "trueValAgain" : true
+            },
+            {
+                "a" : "a",
+                "abcd" : "abcd",
+                "abcd-again" : "abcd",
+                "b" : "b",
+                "c" : "c",
+                "concatenated" : "null bar 42 baz true 3.14 hi",
+                "d" : "d",
+                "double" : "3.14",
+                "false" : "false",
+                "no" : "no",
+                "null" : "null",
+                "number" : "57",
+                "true" : "true",
+                "yes" : "yes"
+            }
+        ],
+        "ofString" : [
+            "a",
+            "b",
+            "c"
+        ],
+        "ofStringBean" : [
+            {
+                "abcd" : "testAbcdOne",
+                "yes" : "testYesOne"
+            },
+            {
+                "abcd" : "testAbcdTwo",
+                "yes" : "testYesTwo"
+            }
+        ]
+    },
+    "booleans" : {
+        "falseVal" : false,
+        "falseValAgain" : false,
+        "off" : "off",
+        "on" : "on",
+        "trueVal" : true,
+        "trueValAgain" : true
+    },
+    "bytes" : {
+        "kibibyte" : "1K",
+        "kilobyte" : "1kB",
+        "thousandBytes" : "1000B"
+    },
+    "durations" : {
+        "halfSecond" : "0.5s",
+        "second" : "1s",
+        "secondAsNumber" : 1000
+    },
+    "enums" : {
+        "problem" : "P1",
+        "solutions" : [
+            "S1",
+            "S3"
+        ]
+    },
+    "numbers" : {
+        "byteObj" : "1",
+        "byteVal" : "1",
+        "doubleObj" : "1.0",
+        "doubleVal" : "1.0",
+        "intObj" : "3",
+        "intVal" : "3",
+        "longObj" : "4",
+        "longVal" : "4",
+        "shortObj" : "2",
+        "shortVal" : "2"
+    },
+    "objects" : {
+        "valueObject" : {
+            "mandatoryValue" : "notNull"
+        }
+    },
+    "preferCamelNames" : {
+        "baz-bar" : "no",
+        "bazBar" : "yes",
+        "foo-bar" : "no",
+        "fooBar" : "yes"
+    },
+    "sets" : {
+        "empty" : [],
+        "of-double" : [
+            3.14,
+            4.14,
+            4.14,
+            5.14
+        ],
+        "of-long" : {
+            "1" : 32,
+            "2" : 42,
+            "3" : 52
+        },
+        "ofArray" : [
+            [
+                "a",
+                "b",
+                "c"
+            ],
+            [
+                "a",
+                "b",
+                "c"
+            ],
+            [
+                "a",
+                "b",
+                "c"
+            ]
+        ],
+        "ofBoolean" : [
+            true,
+            false,
+            false
+        ],
+        "ofConfig" : [
+            {
+                "byteObj" : "1",
+                "byteVal" : "1",
+                "doubleObj" : "1.0",
+                "doubleVal" : "1.0",
+                "intObj" : "3",
+                "intVal" : "3",
+                "longObj" : "4",
+                "longVal" : "4",
+                "shortObj" : "2",
+                "shortVal" : "2"
+            },
+            {
+                "falseVal" : false,
+                "falseValAgain" : false,
+                "off" : "off",
+                "on" : "on",
+                "trueVal" : true,
+                "trueValAgain" : true
+            },
+            {
+                "a" : "a",
+                "abcd" : "abcd",
+                "abcd-again" : "abcd",
+                "b" : "b",
+                "c" : "c",
+                "concatenated" : "null bar 42 baz true 3.14 hi",
+                "d" : "d",
+                "double" : "3.14",
+                "false" : "false",
+                "no" : "no",
+                "null" : "null",
+                "number" : "57",
+                "true" : "true",
+                "yes" : "yes"
+            }
+        ],
+        "ofConfigObject" : [
+            {
+                "byteObj" : "1",
+                "byteVal" : "1",
+                "doubleObj" : "1.0",
+                "doubleVal" : "1.0",
+                "intObj" : "3",
+                "intVal" : "3",
+                "longObj" : "4",
+                "longVal" : "4",
+                "shortObj" : "2",
+                "shortVal" : "2"
+            },
+            {
+                "falseVal" : false,
+                "falseValAgain" : false,
+                "off" : "off",
+                "on" : "on",
+                "trueVal" : true,
+                "trueValAgain" : true
+            },
+            {
+                "a" : "a",
+                "abcd" : "abcd",
+                "abcd-again" : "abcd",
+                "b" : "b",
+                "c" : "c",
+                "concatenated" : "null bar 42 baz true 3.14 hi",
+                "d" : "d",
+                "double" : "3.14",
+                "false" : "false",
+                "no" : "no",
+                "null" : "null",
+                "number" : "57",
+                "true" : "true",
+                "yes" : "yes"
+            }
+        ],
+        "ofConfigValue" : [
+            1,
+            2,
+            "a"
+        ],
+        "ofDuration" : [
+            1,
+            "2h",
+            "3 days"
+        ],
+        "ofInt" : [
+            1,
+            2,
+            3,
+            2,
+            3
+        ],
+        "ofMemorySize" : [
+            1024,
+            "1M",
+            "1G"
+        ],
+        "ofNull" : [
+            null,
+            null,
+            null
+        ],
+        "ofObject" : [
+            {
+                "byteObj" : "1",
+                "byteVal" : "1",
+                "doubleObj" : "1.0",
+                "doubleVal" : "1.0",
+                "intObj" : "3",
+                "intVal" : "3",
+                "longObj" : "4",
+                "longVal" : "4",
+                "shortObj" : "2",
+                "shortVal" : "2"
+            },
+            {
+                "falseVal" : false,
+                "falseValAgain" : false,
+                "off" : "off",
+                "on" : "on",
+                "trueVal" : true,
+                "trueValAgain" : true
+            },
+            {
+                "a" : "a",
+                "abcd" : "abcd",
+                "abcd-again" : "abcd",
+                "b" : "b",
+                "c" : "c",
+                "concatenated" : "null bar 42 baz true 3.14 hi",
+                "d" : "d",
+                "double" : "3.14",
+                "false" : "false",
+                "no" : "no",
+                "null" : "null",
+                "number" : "57",
+                "true" : "true",
+                "yes" : "yes"
+            }
+        ],
+        "ofString" : [
+            "a",
+            "b",
+            "c"
+        ],
+        "ofStringBean" : [
+            {
+                "abcd" : "testAbcdOne",
+                "yes" : "testYesOne"
+            },
+            {
+                "abcd" : "testAbcdTwo",
+                "yes" : "testYesTwo"
+            }
+        ]
+    },
+    "strings" : {
+        "a" : "a",
+        "abcd" : "abcd",
+        "abcd-again" : "abcd",
+        "b" : "b",
+        "c" : "c",
+        "concatenated" : "null bar 42 baz true 3.14 hi",
+        "d" : "d",
+        "double" : "3.14",
+        "false" : "false",
+        "no" : "no",
+        "null" : "null",
+        "number" : "57",
+        "true" : "true",
+        "yes" : "yes"
+    },
+    "validation" : {
+        "should-be-boolean" : 42,
+        "should-be-list" : "hello",
+        "shouldBeInt" : true
+    },
+    "values" : {
+        "config" : {
+            "a" : "a",
+            "abcd" : "abcd",
+            "abcd-again" : "abcd",
+            "b" : "b",
+            "c" : "c",
+            "concatenated" : "null bar 42 baz true 3.14 hi",
+            "d" : "d",
+            "double" : "3.14",
+            "false" : "false",
+            "no" : "no",
+            "null" : "null",
+            "number" : "57",
+            "true" : "true",
+            "yes" : "yes"
+        },
+        "configObj" : {
+            "byteObj" : "1",
+            "byteVal" : "1",
+            "doubleObj" : "1.0",
+            "doubleVal" : "1.0",
+            "intObj" : "3",
+            "intVal" : "3",
+            "longObj" : "4",
+            "longVal" : "4",
+            "shortObj" : "2",
+            "shortVal" : "2"
+        },
+        "configValue" : "hello world",
+        "list" : [
+            1,
+            2,
+            3
+        ],
+        "obj" : 42,
+        "unwrappedMap" : {
+            "should-be-boolean" : 42,
+            "should-be-list" : "hello",
+            "shouldBeInt" : true
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "config": {
+    "name": "orange",
+    "os": "linux"
+  },
+  "env": "development"
+}

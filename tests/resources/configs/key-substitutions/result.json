@@ -1,0 +1,26 @@
+{
+  "a": "x",
+  "app": {
+    "http": {
+      "host": "localhost",
+      "port": 8000
+    }
+  },
+  "b": "y",
+  "cinnamon": {
+    "akka": {
+      "http": {
+        "servers": {
+          "localhost": {
+            "8000": {
+              "capacity": "high"
+            }
+          }
+        }
+      }
+    }
+  },
+  "x": {
+    "y": 33
+  }
+}

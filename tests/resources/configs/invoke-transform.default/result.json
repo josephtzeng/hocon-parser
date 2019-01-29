@@ -1,0 +1,8 @@
+{
+  "concat-with-args": "cd",
+  "concat-with-params": "ab",
+  "str": "a string",
+  "test": {
+    "name": "test"
+  }
+}

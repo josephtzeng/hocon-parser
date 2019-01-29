@@ -1,0 +1,12 @@
+{
+  "os": {
+    "name": "Windows 8"
+  },
+  "something": {
+    "os": {
+      "Linux": "/some/random/linux/friendly/path",
+      "Windows 8": "\\some\\random\\windows\\friendly\\path"
+    },
+    "path": "\\some\\random\\windows\\friendly\\path"
+  }
+}

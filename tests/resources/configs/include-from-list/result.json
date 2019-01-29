@@ -1,0 +1,154 @@
+{
+    "a":
+    [
+    {
+        "arrays" : {
+            "empty" : [],
+            "firstElementNotASubst" : [
+                "a",
+                "b"
+            ],
+            "ofArray" : [
+                [
+                    "a",
+                    "b",
+                    "c"
+                ],
+                [
+                    "a",
+                    "b",
+                    "c"
+                ],
+                [
+                    "a",
+                    "b",
+                    "c"
+                ]
+            ],
+            "ofBoolean" : [
+                true,
+                false
+            ],
+            "ofDouble" : [
+                3.14,
+                4.14,
+                5.14
+            ],
+            "ofInt" : [
+                1,
+                2,
+                3
+            ],
+            "ofNull" : [
+                null,
+                null,
+                null
+            ],
+            "ofObject" : [
+                {
+                    "fortyTwo" : 42,
+                    "fortyTwoAgain" : 42
+                },
+                {
+                    "false" : false,
+                    "falseAgain" : false,
+                    "true" : true,
+                    "trueAgain" : true
+                },
+                {
+                    "a" : "a",
+                    "abcd" : "abcd",
+                    "abcdAgain" : "abcd",
+                    "b" : "b",
+                    "c" : "c",
+                    "concatenated" : "null bar 42 baz true 3.14 hi",
+                    "d" : "d",
+                    "double" : "3.14",
+                    "doubleStartingWithDot" : ".33",
+                    "false" : "false",
+                    "no" : "no",
+                    "null" : "null",
+                    "number" : "57",
+                    "true" : "true",
+                    "yes" : "yes"
+                }
+            ],
+            "ofString" : [
+                "a",
+                "b",
+                "c"
+            ]
+        },
+        "booleans" : {
+            "false" : false,
+            "falseAgain" : false,
+            "true" : true,
+            "trueAgain" : true
+        },
+        "durations" : {
+            "halfSecond" : "0.5s",
+            "largeNanos" : "4878955355435272204ns",
+            "micros" : "2000 micros",
+            "millis" : "1 milli",
+            "minusLargeNanos" : "-4878955355435272204ns",
+            "plusLargeNanos" : "+4878955355435272204ns",
+            "second" : "1s",
+            "secondAsNumber" : 1000,
+            "secondsList" : [
+                "1s",
+                "2seconds",
+                "3 s",
+                4000
+            ]
+        },
+        "floats" : {
+            "fortyTwoPointOne" : 42.1,
+            "fortyTwoPointOneAgain" : 42.1,
+            "pointThirtyThree" : ".33",
+            "pointThirtyThreeAgain" : ".33"
+        },
+        "ints" : {
+            "fortyTwo" : 42,
+            "fortyTwoAgain" : 42
+        },
+        "memsizes" : {
+            "halfMeg" : "0.5M",
+            "meg" : "1M",
+            "megAsNumber" : 1048576,
+            "megsList" : [
+                "1M",
+                "1024K",
+                1048576
+            ]
+        },
+        "nulls" : {
+            "null" : null,
+            "nullAgain" : null
+        },
+        "periods" : {
+            "day" : "1d",
+            "dayAsNumber" : 2,
+            "month" : "5 mo",
+            "week" : "3 weeks",
+            "year" : "8y"
+        },
+        "strings" : {
+            "a" : "a",
+            "abcd" : "abcd",
+            "abcdAgain" : "abcd",
+            "b" : "b",
+            "c" : "c",
+            "concatenated" : "null bar 42 baz true 3.14 hi",
+            "d" : "d",
+            "double" : "3.14",
+            "doubleStartingWithDot" : ".33",
+            "false" : "false",
+            "no" : "no",
+            "null" : "null",
+            "number" : "57",
+            "true" : "true",
+            "yes" : "yes"
+        }
+    }
+    ]
+}

@@ -1,0 +1,17 @@
+test.func (_.isType)
+    .should ("return true when @obj = %j is of type %j")
+        .given (1, "number")
+        .given (1.3, "number")
+        .given ("2", "string")
+        .given ({}, "object")
+        .given ([], "array")
+        .given (true, "boolean")
+        .given (function () {}, "function")
+        .given (Symbol ("sym"), "symbol")
+        .returns (true)
+
+    .should ("return false when @obj = %j")
+        .given (null, "object")
+        .given (undefined, "undefined")
+        .returns (false)
+;

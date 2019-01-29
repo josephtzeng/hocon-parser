@@ -1,0 +1,7 @@
+{
+  "config": {
+    "name": "apple",
+    "os": "mac"
+  },
+  "env": "production"
+}
