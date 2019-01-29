@@ -16,18 +16,20 @@
         "test:tag": "jest --verbose",
         "test:update": "jest --verbose --coverage --updateSnapshot",
         "test:watch": "jest --coverage --verbose --watch",
-        "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html"
+        "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html",
+        "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
     },
     "keywords": [
         "HOCON config parser"
     ],
     "repository": {
-      "type": "git",
-      "url": "https://github.com/josephtzeng/hocon-parser.git"
+        "type": "git",
+        "url": "https://github.com/josephtzeng/hocon-parser.git"
     },
     "author": "Joseph Tzeng <joseph@pushcorn.com>",
     "license": "ISC",
     "devDependencies": {
+        "coveralls": "^3.0.2",
         "debug": "^4.1.1",
         "eslint": "^5.12.0",
         "jest": "^23.6.0"
@@ -44,7 +46,7 @@
         ]
     },
     "bugs": {
-      "url": "https://github.com/josephtzeng/hocon-parser/issues"
+        "url": "https://github.com/josephtzeng/hocon-parser/issues"
     },
     "homepage": "https://github.com/josephtzeng/hocon-parser"
 }
