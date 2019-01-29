@@ -17,7 +17,7 @@
         "test:update": "jest --verbose --coverage --updateSnapshot",
         "test:watch": "jest --coverage --verbose --watch",
         "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html",
-        "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
+        "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
     },
     "engines": {
         "node": ">=10.12.0"
