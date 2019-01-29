@@ -1,6 +1,6 @@
 # A HOCON Parser for Node.js
 
-**hocon-parser** is a lightweight and extensible JavaScript parser for [HOCON (Human-Optimized Config Object Notation)] (https://github.com/lightbend/config/blob/master/HOCON.md). It can be used as a library or invoked via the CLI. It also supports data transformation (with a pipe "|" symbol) that allows you to transform the data into different types. Developer are free to extend core classes to achieve different parsing behavior.
+**hocon-parser** is a lightweight and extensible JavaScript parser for [HOCON (Human-Optimized Config Object Notation)](https://github.com/lightbend/config/blob/master/HOCON.md). It can be used as a library or invoked via the CLI. It also supports data transformation (with a pipe "|" symbol) that allows you to transform the data into different types. Developer are free to extend core classes to achieve different parsing behavior.
 
 
 
