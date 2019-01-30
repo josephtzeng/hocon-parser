@@ -206,7 +206,7 @@ The parser consists of five major components:
 
 ## Context
 
-The context is responsible for loading the data from the source and building the root node of the config file. A new context will be created when a file is included. A context also stores some relavant information about the loaded file/resource, like encoding of the file, whether the file is required, or if the file should be parsed in strict mode. The Context class does the heavy lifting of the parsing task. If you check the source code, you will notice that the parser simply delegates the parsing task to the context.
+The context is responsible for loading the data from the source and building the root node of the config file. A new context will be created when a file is included. A context also stores some relevant information about the loaded file/resource, like encoding of the file, whether the file is required, or if the file should be parsed in strict mode. The Context class does the heavy lifting of the parsing task. If you check the source code, you will notice that the parser simply delegates the parsing task to the context.
 
 ```js
 var context = new Context (opts);
@@ -300,7 +300,7 @@ registerComponent (TestBuilder);
 
 ## Transform
 
-As the name suggests, a transform is used to convert or post-process the load data or value. Below is an example of using the ``HashTransform`` to get the md5 checksum of an image file.
+As the name suggests, a transform is used to convert or post-process the loaded data or value. Below is an example of using the ``HashTransform`` to get the md5 checksum of an image file.
 
 ```
 image-hash = @image.png | hash { algorithm = md5 }
