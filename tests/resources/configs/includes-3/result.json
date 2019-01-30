@@ -50,7 +50,6 @@
     "subtree": {},
     "test01": {
         "booleans": 42,
-        "ints": 12,
         "arrays" : {
             "empty" : [],
             "firstElementNotASubst" : [
@@ -216,5 +215,5 @@
         "foo": "This is in the included file",
         "a": "This is in the included file",
         "b": "This is in the including file"
-   }
+    }
 }
