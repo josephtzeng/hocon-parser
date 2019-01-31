@@ -16,6 +16,37 @@ transformation (with a pipe "|" symbol) that allows you to transform the data
 into different types. Developer are free to extend core classes to achieve
 different parsing behavior.
 
+## Table of Contents
+
+<!-- vim-markdown-toc GFM -->
+
+* [Installation](#installation)
+* [Examples](#examples)
+  * [Array Element Accessing](#array-element-accessing)
+  * [Dynamic Include](#dynamic-include)
+  * [Filter Transform](#filter-transform)
+  * [Array Inclusion](#array-inclusion)
+  * [Key Substitution](#key-substitution)
+  * [Resolution with Local Scope](#resolution-with-local-scope)
+  * [Nested Substitution](#nested-substitution)
+* [Divergence from the HOCON Spec](#divergence-from-the-hocon-spec)
+* [Parsing Modes](#parsing-modes)
+  * [Default Mode](#default-mode)
+    * [File Inclusion Shorthand](#file-inclusion-shorthand)
+    * [Data Transformation](#data-transformation)
+    * [Properties File Parsing](#properties-file-parsing)
+    * [Number Parsing](#number-parsing)
+  * [Strict Mode](#strict-mode)
+* [Core Components](#core-components)
+  * [Context](#context)
+  * [Node](#node)
+  * [Source](#source)
+  * [Builder](#builder)
+  * [Transform](#transform)
+* [License](#license)
+
+<!-- vim-markdown-toc -->
+
 ## Installation
 
 To use hocon-parser as library, go to your project directory and run the
@@ -193,7 +224,7 @@ Output:
 }
 ```
 
-### Resolution with the Local Scope
+### Resolution with Local Scope
 
 Input:
 
@@ -437,11 +468,11 @@ include strict(file("test.properties"))
 
 The parser consists of five major components:
 
-- Context: The parsing context.
-- Node: The data structure used to represent the parsed config.
-- Source: The data source.
-- Builder: The node builder.
-- Transform: The data transform.
+* Context: The parsing context.
+* Node: The data structure used to represent the parsed config.
+* Source: The data source.
+* Builder: The node builder.
+* Transform: The data transform.
 
 ### Context
 
