@@ -9,5 +9,6 @@ module.exports =
     {
         return a + "" + b;
     },
+
     name: "test"
-}
+};

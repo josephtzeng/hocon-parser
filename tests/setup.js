@@ -84,7 +84,7 @@ test.formatString  = function (str, args)
     }
 
     return no_util.format.apply (no_util, [formatted].concat (sortedArgs));
-}
+};
 
 
 test.startServer = function (root)

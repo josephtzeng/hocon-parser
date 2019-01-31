@@ -149,6 +149,7 @@ module.exports = {
         "no-extra-label": "error",
         "no-extra-parens": "off",
         "no-floating-decimal": "error",
+        "no-irregular-whitespace": "error",
         "no-implicit-coercion": [
             "error",
             {
@@ -266,7 +267,7 @@ module.exports = {
             "error",
             "never"
         ],
-        "semi": "off",
+        "semi": "warn",
         "semi-spacing": "off",
         "semi-style": "off",
         "sort-imports": "error",

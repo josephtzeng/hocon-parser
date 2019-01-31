@@ -28,7 +28,7 @@ async function loadSource (context)
     await context.resolveSource ();
     await context.loadSource ();
 
-    var source = context.source
+    var source = context.source;
 
     if (!(source instanceof HttpSource))
     {

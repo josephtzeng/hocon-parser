@@ -128,7 +128,7 @@ test.func (new Context (
     {
         text:         "result: ${add} | invoke { params: { x: 4, y: 5 } }",
         query:        "result",
-        scope:        { add: function (x, y) { return x + y } }
+        scope:        { add: function (x, y) { return x + y; } }
 
     }), "resolve")
     .should ("be able to apply the invoke resolution")
@@ -194,7 +194,7 @@ test.func (new Context (
     {
         text:         "add: ${add} | invoke { args: [4, 5] }",
         query:        "add",
-        scope:        { add: function (x, y) { return x + y } }
+        scope:        { add: function (x, y) { return x + y; } }
 
     }), "resolve")
     .should ("be able to apply the invoke transform with args")
@@ -205,7 +205,7 @@ test.func (new Context (
     {
         text:         "add: ${add} | invoke { args: [4] }",
         query:        "add",
-        scope:        { add: function (x) { return x + 5 } }
+        scope:        { add: function (x) { return x + 5; } }
 
     }), "resolve")
     .should ("be able to apply the invoke transform with args")
