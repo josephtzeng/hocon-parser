@@ -4,7 +4,7 @@
         "got": "^9.6.0"
     },
     "name": "@pushcorn/hocon-parser",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "A HOCON parser",
     "main": "lib/parser.js",
     "bin": {
