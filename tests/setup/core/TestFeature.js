@@ -30,7 +30,7 @@ class TestFeature
     {
         var hasResult = arguments.length == 3;
 
-        describe (this.description, () =>
+        describe (this.desc, () =>
         {
             it ("  +--> expecting " + message, async () =>
             {

@@ -30,7 +30,7 @@ test.func (_.query, "query 'tests/resources/popular-licenses.json'")
     .returns (expect.toBeInstanceOf (Array))
     .having ("length = %1:j", "length", 11)
 
-    .given (licenses, "{id}.no_a_property")
+    .given (licenses, "{id}.not_a_property")
     .returns (undefined)
 
     .given (licenses, "{id}.length")
