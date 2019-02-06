@@ -1,6 +1,9 @@
 {
-    "hocon-parser":
+    "@pushcorn":
     {
-        "plugins": ["test-plugin"]
+        "hocon-parser":
+        {
+            "plugins": ["test-plugin"]
+        }
     }
 }
