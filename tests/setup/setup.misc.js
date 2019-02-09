@@ -6,6 +6,8 @@ const no_util         = require ("util");
 test.trackBranches.testMode = true;
 test.trackBranches.suffix   = `-${process.pid}`;
 
+console.log = function () {}; // eslint-disable-line no-console
+
 
 test.func (test.trackBranches)
     .should ("create entries for dash-separated arguments")

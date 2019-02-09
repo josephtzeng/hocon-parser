@@ -4,7 +4,7 @@
         "got": "^9.6.0"
     },
     "name": "@pushcorn/hocon-parser",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "A HOCON parser",
     "main": "lib/parser.js",
     "bin": {
@@ -38,6 +38,7 @@
         "jest": "^24.0.0"
     },
     "jest": {
+        "testEnvironment": "node",
         "setupFilesAfterEnv": ["./tests/setup.js"],
         "testPathIgnorePatterns": [
             "/node_modules/",

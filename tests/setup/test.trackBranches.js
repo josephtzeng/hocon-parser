@@ -4,6 +4,8 @@ const no_fs   = require ("fs");
 const no_path = require ("path");
 const no_os   = require ("os");
 
+console.log = function () {}; // eslint-disable-line no-console
+
 
 test.func (test.trackBranches)
     .should ("create entries for dash-separated arguments")
