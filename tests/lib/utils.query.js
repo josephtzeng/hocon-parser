@@ -19,7 +19,7 @@ test.func (_, "query")
 
     .should ("return `undefined` if the object is `null` or `undefined`")
     .given (null, "prop")
-    .returns (null)
+    .returns (undefined)
 
     .given (undefined, "prop")
     .returns (undefined)

@@ -1,0 +1,18 @@
+{
+  "options": {
+    "a": {
+      "b": {
+        "c": {
+          "vh": [
+            {
+              "name": "dashboard"
+            },
+            {
+              "name": "app"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
