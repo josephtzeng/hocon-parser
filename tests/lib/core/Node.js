@@ -86,4 +86,12 @@ test.feature ("Node getters")
     .expecting ("Node.context should try to get parent's context if it does have one", (node) => node.context, undefined);
 
 
+function A () {}
 
+A.prototype.k = "v";
+
+test.func (Node.merge, "Node.merge")
+    .should ("copy merge owned properties")
+    .given ({}, new A)
+    .returns ({})
+;
