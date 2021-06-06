@@ -3,7 +3,7 @@ var data      = { this: { is: { a: "path" } }, undef: undefined, null: null };
 
 
 test.func (_, "query")
-    .should ("accept a dot-separted path")
+    .should ("accept a dot-separated path")
     .given (data, "this.is.a")
     .returns ("path")
 

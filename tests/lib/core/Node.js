@@ -54,7 +54,7 @@ test.func (Node.formatPath, "Node.formatPath")
 ;
 
 test.func (Node.assign, "Node.assign")
-    .should ("accept a dot-separted path")
+    .should ("accept a dot-separated path")
     .given ({}, "this.is.a", "path")
     .returns ({ this: { is: { a: "path" } } })
 ;
