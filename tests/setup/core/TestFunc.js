@@ -186,7 +186,7 @@ class TestFunc
 
         (this[ONLY] ? describe.only : describe) (this.name, () =>
         {
-            let thisIt = it ("  +--> having " + message, () =>
+            it ("  +--> having " + message, () =>
             {
                 var v = this.output;
 
