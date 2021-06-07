@@ -8,11 +8,11 @@ test.func (_.sortObject)
     .should ("sort the object %j by keys to %j")
         .given (obj1)
         .returns (obj1)
-            .having ("keys %2:j", (o) => Object.keys (o), ["a", "z"])
+            .having ("keys a and z", (o) => Object.keys (o), ["a", "z"])
 
         .given (obj2)
         .returns (obj2)
-            .having ("keys %2:j", (o) => Object.keys (o.x), ["c", "e"])
+            .having ("keys c and e", (o) => Object.keys (o.x), ["c", "e"])
 
     .should ("throw if @obj = %j is not an object or array")
         .given (null)

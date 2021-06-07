@@ -498,7 +498,7 @@ node of the config, and that root node will be used as the starting point for
 the resolving phase of the parsing process. Developers are free to extend the
 existing node classes. For example, if you want to extend `ObjectNode`, first
 create a class that extends `ObjectNode`, then register it with
-`paser.registerNode ()` or `Node.registerNode ()` method. For example, running
+`parser.registerNode ()` or `Node.registerNode ()` method. For example, running
 the following snippet
 
 ```js

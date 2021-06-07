@@ -3,7 +3,7 @@ var data      = { this: { is: { a: "path" } }, undef: undefined, null: null };
 
 
 test.func (_, "query")
-    .should ("accept a dot-separted path")
+    .should ("accept a dot-separated path")
     .given (data, "this.is.a")
     .returns ("path")
 
@@ -34,7 +34,7 @@ test.func (_.query, "query 'tests/resources/popular-licenses.json'")
 
     .given (licenses, "*{id}")
     .returns (expect.toBeInstanceOf (Array))
-    .having ("length = %1:j", "length", 11)
+    .having ("length = 11", "length", 11)
 
     .given (licenses, "{id}.not_a_property")
     .returns (undefined)

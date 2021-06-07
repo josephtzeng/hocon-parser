@@ -186,7 +186,7 @@ class TestFunc
 
         (this[ONLY] ? describe.only : describe) (this.name, () =>
         {
-            let thisIt = it ("  +--> having ", () =>
+            let thisIt = it ("  +--> having " + message, () =>
             {
                 var v = this.output;
 
@@ -199,11 +199,6 @@ class TestFunc
                 {
                     v = _.query (v, prop);
                 }
-
-                var mesg = test.formatString (message, [prop, predicate, v]);
-
-                thisIt.result.description += mesg;
-                thisIt.result.fullName += mesg;
 
                 expect (v).toEqual (predicate);
             });
