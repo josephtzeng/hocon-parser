@@ -422,7 +422,7 @@ Output:
 }
 ```
 
-Besides the `sort` and `slice` transforms, the parse comes with several useful
+Besides the `sort` and `slice` transforms, the parser comes with several useful
 transforms like `map`, `reduce`, `query`, and `eval`. You can also define your
 transforms and register them with the `parser.registerComponent ()` method.
 
