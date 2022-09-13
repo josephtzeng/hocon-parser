@@ -11,5 +11,12 @@ test.func (Context, "parseUrl")
         source: "file",
         url:    "file:///C:/Users/IEUser"
     })
+
+    .given ("C:\\Users\\John Doe\\file.txt")
+    .returns (
+    {
+        source: "file",
+        url:    "file:///C:/Users/John%20Doe/file.txt"
+    })
 ;
 

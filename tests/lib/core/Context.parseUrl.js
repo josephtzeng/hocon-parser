@@ -98,6 +98,9 @@ test.func (Context, "parseUrl")
     .given (`file:a.txt`)
     .returns (sourceWithCwd ("a.txt"))
 
+    .given ("file:" + no_path.join (__dirname, "../../resources/dir with spaces/test.json"))
+    .returns (sourceWithCwd ("tests/resources/dir with spaces/test.json"))
+
     .given (`required(modulepath("resource.json"))`)
     .returns ({ url: "modulepath:///resource.json", source: "modulepath", required: true })
 
