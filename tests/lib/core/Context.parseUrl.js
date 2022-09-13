@@ -1,3 +1,5 @@
+process.$platform = "unix";
+
 const { Context } = include ("lib/core/Context");
 
 var no_path = require ("path");
@@ -22,24 +24,26 @@ function sourceWithAbsPath (path)
     };
 }
 
+let parentContext = new Context ({ url: "/Users/John Doe/tmp" });
+
 
 test.func (Context, "parseUrl")
     .should ("throw when the URL is %j")
 
     .given ('file(modulepath(content("/tests/resources/configs/simple/test.conf")))')
     .throws (/can only be set once/i)
-
-    .given (__filename)
-    .returns (
-    {
-        source: "file",
-        url:    no_url.parse ("file://" + no_path.normalize ("/" + __filename)).href
-    })
 ;
 
 
 test.func (Context, "parseUrl")
     .should ("parse the URL %j to %j")
+
+    .given ("/tmp/file.txt", parentContext)
+    .before (async function ()
+    {
+        await parentContext.resolve ();
+    })
+    .returns ({ source: "file", url: no_url.pathToFileURL ("/tmp/file.txt").href })
 
     .given ('content(modulepath("/tests/resources/configs/simple/test.conf"))')
     .returns ({ source: "modulepath", builder: "content", url: "modulepath:///tests/resources/configs/simple/test.conf" })

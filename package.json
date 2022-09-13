@@ -4,7 +4,7 @@
         "node-fetch": "2.6.7"
     },
     "name": "@pushcorn/hocon-parser",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "A HOCON parser",
     "main": "lib/parser.js",
     "bin": {
