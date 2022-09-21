@@ -1,5 +1,3 @@
-process.$platform = "unix";
-
 const { Context } = include ("lib/core/Context");
 
 var no_path = require ("path");
@@ -102,7 +100,7 @@ test.func (Context, "parseUrl")
     .given (`file:a.txt`)
     .returns (sourceWithCwd ("a.txt"))
 
-    .given ("file:" + no_path.join (__dirname, "../../resources/dir with spaces/test.json"))
+    .given ("file:" + no_path.join (test.normalizePath (__dirname), "../../resources/dir with spaces/test.json"))
     .returns (sourceWithCwd ("tests/resources/dir with spaces/test.json"))
 
     .given (`required(modulepath("resource.json"))`)

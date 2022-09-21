@@ -57,6 +57,17 @@ afterAll (() =>
 });
 
 
+test.normalizePath = function (path) // fix the windows driver letter inconsistency
+{
+    var cwd = process.cwd ();
+
+    return path.toLowerCase ().startsWith (cwd.toLowerCase ())
+        ? cwd + path.slice (cwd.length)
+        : path
+    ;
+};
+
+
 test.formatString  = function (str, args)
 {
     var parts       = str.split (ARGS_SPLIT_PATTERN);
