@@ -1,10 +1,10 @@
 {
     "dependencies": {
-        "commander": "9.4.0",
+        "commander": "9.4.1",
         "node-fetch": "2.6.7"
     },
     "name": "@pushcorn/hocon-parser",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "A HOCON parser",
     "main": "lib/parser.js",
     "bin": {
