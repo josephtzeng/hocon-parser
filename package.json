@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "commander": "9.4.1",
+        "commander": "9.5.0",
         "node-fetch": "2.6.7"
     },
     "name": "@pushcorn/hocon-parser",
