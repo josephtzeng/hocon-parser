@@ -5,7 +5,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/josephtzeng/hocon-parser/badge.svg?branch=master)](https://coveralls.io/github/josephtzeng/hocon-parser?branch=master)
 [![install size](https://packagephobia.now.sh/badge?p=@pushcorn/hocon-parser)](https://packagephobia.now.sh/result?p=@pushcorn/hocon-parser)
 [![Known Vulnerabilities](https://snyk.io/test/github/josephtzeng/hocon-parser/badge.svg)](https://snyk.io/test/github/josephtzeng/hocon-parser)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/josephtzeng/hocon-parser.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/josephtzeng/hocon-parser/context:javascript)
 
 **hocon-parser** is a lightweight and extensible JavaScript parser for
 [HOCON (Human-Optimized Config Object Notation)](https://github.com/lightbend/config/blob/master/HOCON.md).
