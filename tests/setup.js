@@ -116,7 +116,7 @@ test.startServer = function (root)
             if (error)
             {
                 res.statusCode = error;
-                res.end (`Internal error. (code = ${error})`);
+                res.end (`Internal error. (code = ${encodeURIComponent (error)})`);
                 return;
             }
 
@@ -131,7 +131,7 @@ test.startServer = function (root)
             {
                 res.statusCode = 404;
 
-                res.end (`File '${req.url}' not found!`);
+                res.end (`File '${url.format ()}' not found!`);
             }
         }
 
