@@ -1,10 +1,10 @@
 {
     "dependencies": {
-        "commander": "10.0.0",
-        "node-fetch": "2.6.9"
+        "commander": "10.0.1",
+        "node-fetch": "2.6.11"
     },
     "name": "@pushcorn/hocon-parser",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "description": "A HOCON parser",
     "main": "lib/parser.js",
     "bin": {
@@ -32,11 +32,11 @@
     "author": "Joseph Tzeng <joseph@pushcorn.com>",
     "license": "ISC",
     "devDependencies": {
-        "acorn": "8.8.2",
+        "acorn": "8.10.0",
         "coveralls": "3.1.1",
         "debug": "4.3.4",
-        "eslint": "8.35.0",
-        "jest": "29.5.0"
+        "eslint": "8.46.0",
+        "jest": "29.6.2"
     },
     "jest": {
         "testEnvironment": "node",
