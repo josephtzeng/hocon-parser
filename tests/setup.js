@@ -110,7 +110,7 @@ test.startServer = function (root)
         async function handleRequest (req, res)
         {
             var url   = no_url.parse (req.url, true);
-            var path  = root + url.pathname;
+            var path  = root + no_path.join ("/", url.pathname);
             var error = url.query.error;
 
             if (error)

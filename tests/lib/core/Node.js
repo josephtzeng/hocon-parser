@@ -59,6 +59,19 @@ test.func (Node.assign, "Node.assign")
     .returns ({ this: { is: { a: "path" } } })
 ;
 
+test.func (Node.assign, "Node.assign")
+    .should ("ignore the prototype properties")
+    .given ({}, "this.that.constructor.a", "path")
+    .returns ({ this: { that: {} } })
+
+    .given ({}, "constructor.a", "path")
+    .returns ({})
+
+    .given ({}, "a.b.constructor", "path")
+    .returns ({ a: { b: {} } })
+;
+
+
 test.feature ("Node methods")
     .given (new CustomObjectNode ())
     .expecting ("Node.error to show a message without the token text when the token is not specified", (node) =>
