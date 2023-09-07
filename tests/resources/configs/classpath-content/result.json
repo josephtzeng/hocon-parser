@@ -1,0 +1,6 @@
+{
+  "a": ".1",
+  "content": {
+    "string": "a: 1\nb = 2\nc : 3\nd: null\nd: ${?x}\ne: 6\ne: ${?y}\n"
+  }
+}

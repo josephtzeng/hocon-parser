@@ -544,6 +544,7 @@ supports the following protocols by default:
 | http:       | HttpSource       | a remote file at the given URL with the http: protocol |
 | https:      | HttpsSource      | a remote file at the given URL with the https: protocol |
 | modulepath: | ModulepathSource | a local file that can be found under the module search paths (`module.paths`) |
+| classpath:  | ModulepathSource | classpath is an alias of modulepath |
 
 You can define your own source, but the name of the class should be in the
 format of `<Protocol>Source` and it should extend `SourceAdapter`.

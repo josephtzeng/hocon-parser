@@ -30,6 +30,9 @@ test.func (Context, "parseUrl")
 
     .given ('file(modulepath(content("/tests/resources/configs/simple/test.conf")))')
     .throws (/can only be set once/i)
+
+    .given ('file(classpath(content("/tests/resources/configs/simple/test.conf")))')
+    .throws (/can only be set once/i)
 ;
 
 
@@ -45,6 +48,9 @@ test.func (Context, "parseUrl")
 
     .given ('content(modulepath("/tests/resources/configs/simple/test.conf"))')
     .returns ({ source: "modulepath", builder: "content", url: "modulepath:///tests/resources/configs/simple/test.conf" })
+
+    .given ('content(classpath("/tests/resources/configs/simple/test.conf"))')
+    .returns ({ source: "classpath", builder: "content", url: "classpath:///tests/resources/configs/simple/test.conf" })
 
     .given ("content ()")
     .returns ({})
@@ -120,6 +126,24 @@ test.func (Context, "parseUrl")
 
     .given (`"modulepath:///resource.json"`)
     .returns ({ url: "modulepath:///resource.json", source: "modulepath" })
+
+    .given (`required(classpath("resource.json"))`)
+    .returns ({ url: "classpath:///resource.json", source: "classpath", required: true })
+
+    .given (`required(classpath(resource.json))`)
+    .returns ({ url: "classpath:///resource.json", source: "classpath", required: true })
+
+    .given (`required("classpath:///resource.json")`)
+    .returns ({ url: "classpath:///resource.json", source: "classpath", required: true })
+
+    .given (`classpath ( required (resource.json))`)
+    .returns ({ url: "classpath:///resource.json", source: "classpath", required: true })
+
+    .given (`classpath:///resource.json`)
+    .returns ({ url: "classpath:///resource.json", source: "classpath" })
+
+    .given (`"classpath:///resource.json"`)
+    .returns ({ url: "classpath:///resource.json", source: "classpath" })
 
     .given (`"http://example.com/resource.json"`)
     .returns ({ url: "http://example.com/resource.json", source: "http" })
