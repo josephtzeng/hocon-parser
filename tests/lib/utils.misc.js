@@ -21,7 +21,6 @@ function b ()
     return true;
 }
 
-/* eslint-disable multiline-comment-style */
 /*
 [
     [ '  \u001b[38;5;76;1mTestFunc:b [12:7] \u001b[0mFrom b()', '\u001b[38;5;76m+0ms\u001b[0m' ],

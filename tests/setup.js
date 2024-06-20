@@ -52,7 +52,7 @@ afterAll (() =>
 
     if (keys.length)
     {
-        console.log ("Branches:", keys); // eslint-disable-line no-console
+        console.log ("Branches:", keys);
     }
 });
 
@@ -115,8 +115,16 @@ test.startServer = function (root)
 
             if (error)
             {
-                res.statusCode = error;
-                res.end (`Internal error. (code = ${encodeURIComponent (error)})`);
+                if (error == "destroy")
+                {
+                    res.destroy ();
+                }
+                else
+                {
+                    res.statusCode = error;
+                    res.end (`Internal error. (code = ${encodeURIComponent (error)})`);
+                }
+
                 return;
             }
 

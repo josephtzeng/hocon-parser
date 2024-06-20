@@ -1,7 +1,7 @@
 # A HOCON Parser for Node.js
 
 [![Node version](https://img.shields.io/node/v/@pushcorn/hocon-parser.svg?style=flat)](http://nodejs.org/download/)
-[![Build Status](https://travis-ci.com/josephtzeng/hocon-parser.svg?branch=master)](https://travis-ci.com/josephtzeng/hocon-parser)
+[![Build Status](https://app.travis-ci.com/josephtzeng/hocon-parser.svg?token=FY7pjwZYEs24Q8LEXnEA&branch=master)](https://travis-ci.com/github/josephtzeng/hocon-parser)
 [![Coverage Status](https://coveralls.io/repos/github/josephtzeng/hocon-parser/badge.svg?branch=master)](https://coveralls.io/github/josephtzeng/hocon-parser?branch=master)
 [![install size](https://packagephobia.now.sh/badge?p=@pushcorn/hocon-parser)](https://packagephobia.now.sh/result?p=@pushcorn/hocon-parser)
 [![Known Vulnerabilities](https://snyk.io/test/github/josephtzeng/hocon-parser/badge.svg)](https://snyk.io/test/github/josephtzeng/hocon-parser)

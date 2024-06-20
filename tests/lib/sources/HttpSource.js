@@ -7,6 +7,7 @@ const nothingContext  = new Context ({ url: "http://localhost:PORT/include-param
 const pngContext      = new Context ({ url: "http://localhost:PORT/simple/nodejs.png" });
 const notFoundContext = new Context ({ url: "http://localhost:PORT/not-found.conf" });
 const errorContext    = new Context ({ url: "http://localhost:PORT/not-found.conf?error=500" });
+const destroyContext  = new Context ({ url: "http://localhost:PORT/not-found.conf?error=destroy" });
 
 
 test.startServer (TESTS_DIR + "/resources/configs");
@@ -14,7 +15,7 @@ test.startServer (TESTS_DIR + "/resources/configs");
 
 beforeAll (async () =>
 {
-    for (let c of [context, jsContext, nothingContext, pngContext, notFoundContext, errorContext])
+    for (let c of [context, jsContext, nothingContext, pngContext, notFoundContext, errorContext, destroyContext])
     {
         c.$.url = c.$.url.replace ("PORT", process.env.PORT);
     }
@@ -63,4 +64,8 @@ test.func (loadSource, "HttpSource.load ()")
     .should ("throw if the server returns other error code")
     .given (errorContext)
     .throws (/internal/i)
+
+    .should ("throw if the server destroys the connection")
+    .given (destroyContext)
+    .throws (/socket hang up/i)
 ;

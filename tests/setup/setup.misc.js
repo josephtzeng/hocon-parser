@@ -6,7 +6,7 @@ const no_util         = require ("util");
 test.trackBranches.testMode = true;
 test.trackBranches.suffix   = `-${process.pid}`;
 
-console.log = function () {}; // eslint-disable-line no-console
+console.log = function () {};
 
 
 test.func (test.trackBranches)

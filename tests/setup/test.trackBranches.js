@@ -4,7 +4,7 @@ const no_fs   = require ("fs");
 const no_path = require ("path");
 const no_os   = require ("os");
 
-console.log = function () {}; // eslint-disable-line no-console
+console.log = function () {};
 
 
 test.func (test.trackBranches)

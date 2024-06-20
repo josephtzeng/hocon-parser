@@ -79,7 +79,7 @@ test.func (new Context ({ text: 3, builder: "value" }), "resolve")
     .expecting ("Context.text cast a non-string value to a string", (o, r, t) => t.object.text == "3");
 
 
-test.func (new Context ({ text: "${?unset}", required: false, builder: "value" }), "resolve") // eslint-disable-line no-template-curly-in-string
+test.func (new Context ({ text: "${?unset}", required: false, builder: "value" }), "resolve")
     .should ("return `undefined` the substitution cannot be resolved")
     .returns (undefined);
 
